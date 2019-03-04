@@ -4,9 +4,29 @@
     <meta charset="utf-8" />
     <title>C0743793_WEEK08</title>
     <link href="css/default.css" rel="stylesheet" />
+    <script>
+        var calculator = {
+            sum : 0,
+            starternumber: 1109,
+            stepdownnumber: 11,
+            endnumber: 119,
+            addup: function () {
+                for (i = this.starternumber; i > this.endnumber; i -= this.stepdownnumber) {
+                   
+                    this.sum += i;
+                }
+                return this.sum;
+            }
+        };
+        document.write(calculator.addup());
+
+     </script>
+
 </head>
+
 <body>
     <div>Content goes here!</div>
-    <script src="js/main.js"></script>
+    
+    
 </body>
 </html>
